@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img.png" alt="Company Logo of Drusila Lopez SHS. Flapcode">
+        <h1><b>Crecencia Drucila Lopez Senior High School. Flapcode</b></h1>
+    </div>
+    <div class="navbar">
+        <a href="Home.html" class="active">Home</a>
+        <a href="Lesson.html">Lesson</a>
+        <a href="Video.html">Video</a>
+        <a href="LeaderBoard.html">LeaderBoard</a>
+        <a href="Play.html">Play</a>
+    </div>
+    <div class="main">
+        <h2>Flapcode</h2>
+        <div class="text-background">
+            <p>Flapcode aims to entertain pupils as they learn mathematics. The idea is similar to that of the popular 2013 smartphone game Flappybird, but we added a twist by using general mathematics. You have 15 seconds to answer the questions and can answer each time you cross three tubes. We choose Flappybird because we believe it's an engaging game that will keep you interested until you complete the level. Playing and studying at the same time will help you become more proficient in mathematics.</p>
+        </div>
+        
+        <!-- Centered Rectangle with Text Above -->
+        <div class="center-container">
+            <div class="rectangle"></div>
+        </div>
+    </div>
+    <style>
+        /* POPPINS FONT */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-image: url(BB.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center; /* Aligns items vertically centered */
+        }
+        img {
+            margin-right: 10px; /* Adds space between the image and text */
+            width: 10%; /* Responsive width */
+            height: auto; /* Maintains aspect ratio */
+        }
+        p {
+            font-family: 'Poppins', sans-serif;
+            color: #333; /* Dark text color for contrast */
+            font-size: 25px; /* Adjusted to a valid property */
+            margin: 20px; /* Margin for spacing */
+        }
+        h1 {
+            color: #f1f1f1;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        .navbar {
+            display: flex; /* Changed to flex for vertical alignment */
+            flex-direction: column; /* Aligns items vertically */
+            background-color: #333;
+            width: 200px;  /* Fixed width for the navbar */
+            height: 415px; /* Full height of the viewport */
+            position: fixed; /* Fixes the navbar to the left */
+        }
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: left; /* Align text to the left */
+            padding: 27px 20px; /* Adjusted padding for better spacing */
+            text-decoration: none;
+            font-size: 19px;
+        }
+        .navbar a:hover {
+            background: #f1f1f1;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .main {
+            margin-left: 220px; /* Adjusted margin to accommodate the navbar */
+            padding: 20px;
+            margin-bottom: 30px;
+            flex-grow: 1; /* Allows the main content to grow */
+            position: relative; /* Position relative for absolute children */
+        }
+        .text-background {
+            background-color: white; /* White background for the text */
+            padding: 20px; /* Padding around the text */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0,)
+        }
